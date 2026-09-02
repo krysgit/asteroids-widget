@@ -1,10 +1,10 @@
 <?php
 /*
-Plugin Name: Asteroids Widget by Electric Tree House (PHP 8+ Fix)
+Plugin Name: Asteroids Game Widget Reloaded
 Plugin URI: https://github.com/krysgit/asteroids-widget
-Description: Turn your site into the game of Asteroids. Click to start and you can destroy the contents of your webpage by flying around and shooting them. Updated to fix PHP 8+ compatibility issues.
-Version: 3.0.1
-Author: Eric Burger (Updated for PHP 8+ by Chris Saldaris)
+Description: Turn your site into the arcade game Asteroids. Destroy webpage contents with your ship. A modernized fork compatible with PHP 8+.
+Version: 1.0.0
+Author: Krystalia Saldari (Fork of Electric Tree House)
 Author URI: https://github.com/krysgit
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
