@@ -1,66 +1,61 @@
-=== Asteroids Widget ===
-Contributors: Eric Burger, Erik Rothoff Andersson, krysgit
-Tags: asteroids, fun, game, plugin, widget, sidebar, javascript, php8
-Requires at least: 4.0
-Tested up to: 6.5
-Requires PHP: 7.4
-Stable tag: 3.0.1
-License: GPLv2 or later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
+# Asteroids Game Widget Reloaded
 
-Turn your WordPress site into the classic arcade game Asteroids. Modernized fork with full PHP 8+ compatibility.
+Turn your WordPress site into the classic arcade game Asteroids. Click to start and destroy the contents of your webpage by flying around and shooting them. 
 
-== Description ==
+This repository contains a modernized, secure fork of the original "Asteroids Widget" by Eric Burger (Electric Tree House) and Erik Rothoff Andersson, fully updated for modern WordPress standards and PHP 8.0, 8.1, 8.2, and 8.3+.
 
-Turn your site into the game of Asteroids. Click to start and you can destroy the contents of your webpage by flying around and shooting them. 
+---
 
-The plugin is customizable, allowing you to add a description and/or image as well as controlling which pages the Asteroids widget appears on. 
+## Features
+* Classic Asteroids arcade gameplay directly on your WordPress pages.
+* Multiple button and retro arcade machine image triggers.
+* Optional custom backgrounds and auto-formatting.
+* Embed anywhere using the [asteroids] shortcode or as a Sidebar Widget.
+* Zero fatal errors on PHP 8+.
+* Cleaned of insecure functions (eval removed, proper escaping & sanitization).
 
-This plugin implements the original JavaScript code by Erik Rothoff Andersson, wrapped as a WordPress widget by Eric Burger (Electric Tree House). This modernized release updates legacy PHP code to run smoothly on PHP 8.0, 8.1, 8.2, and 8.3.
+---
 
-== Installation ==
+## Requirements
+* WordPress: 5.0 or higher
+* PHP: 7.4 to 8.3+
+* License: GPLv2 or later
 
-1. Upload the `asteroids-widget` folder to the `/wp-content/plugins/` directory (or upload the `.zip` file via **Plugins > Add New > Upload Plugin**).
-2. Activate the plugin through the **Plugins** menu in WordPress.
-3. Navigate to **Appearance > Widgets** and add the **Asteroids** widget to your sidebar.
-4. (Optional) Embed the game trigger anywhere on pages or posts using the shortcode `[asteroids]`.
+---
 
-== Frequently Asked Questions ==
+## Installation
 
-= Does this version support PHP 8+? =
-Yes. The fatal errors caused by deprecated functions (such as `create_function()`) and legacy PHP 4-style constructors have been resolved.
+### Manual Upload (.zip)
+1. Download the latest .zip release from the Releases section.
+2. In your WordPress Admin, go to Plugins > Add New > Upload Plugin.
+3. Select the .zip file and click Install Now.
+4. Click Activate Plugin.
 
-= Where can I report issues? =
-You can report bugs or submit pull requests directly on GitHub: https://github.com/krysgit/asteroids-widget
+### Widget Setup
+1. Go to Appearance > Widgets.
+2. Add the Asteroids Widget to your preferred sidebar or widget area.
+3. Configure your display rules, images, and button styles.
 
-== Changelog ==
+### Shortcode
+Add the trigger anywhere in your post or page content using the shortcode: [asteroids]
 
-= 3.0.1 =
-* Fixed `Fatal Error: Uncaught Error: Call to undefined function create_function()` for PHP 8+ compatibility.
-* Updated class constructor from `Asteroids_Widget()` to standard `__construct()`.
-* Added explicit GPLv2+ licensing and modern plugin headers.
+---
 
-= 3.0.0 =
-* Moved JS to external script.
-* Added Shortcode `[asteroids]`.
-* Added jQuery toggle to admin options.
+## Changelog
 
-= 2.2.2 =
-* Re-wrote some of the code.
+### 1.0.0 (Reloaded)
+* Forked from original Asteroids Widget by Eric Burger.
+* Fixed Fatal Error: Uncaught Error: Call to undefined function create_function() for PHP 8+ compatibility.
+* Updated class constructor from legacy PHP 4 syntax to standard __construct().
+* Completely removed insecure eval() execution.
+* Added modern sanitization, output escaping, and direct access guards (ABSPATH).
+* Converted shortcode output to use Output Buffering.
+* Enqueued frontend scripts properly with wp_enqueue_script().
 
-= 2.2.1 =
-* Added Arcade images by Alta Peterson.
+---
 
-= 2.2 =
-* Resolved PHP code so that links point to JS and image file in "gears" folder.
-* Added another Button and Image option.
-* Added option for ship to shoot yellow bullets.
-
-= 2.1 =
-* Basically started over. Added Image and Link/Button options to widget. Resolved IE issues.
-
-= 1.1 =
-* Resolved initial bugs and IE issues.
-
-= 1.0 =
-* First Attempt. Basic Functions.
+## Credits & License
+* Original Plugin: Eric Burger (Electric Tree House)
+* Original Game Script: Erik Rothoff Andersson
+* PHP 8+ Fork Maintainer: Chris Saldaris ([https://github.com/krysgit](https://github.com/krysgit))
+* License: Distributed under the GNU General Public License v2.0 or later ([https://www.gnu.org/licenses/gpl-2.0.html](https://www.gnu.org/licenses/gpl-2.0.html)).
